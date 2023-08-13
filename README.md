@@ -1,5 +1,2 @@
 # WinSocket_Client
-Client side support header for WinSocket
-
-
-Working on It
+WinSocket's client-side support header in progress.
