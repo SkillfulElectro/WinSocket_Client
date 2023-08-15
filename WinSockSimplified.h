@@ -39,7 +39,7 @@ public:
 	/*
 		give std::string basket to me , to i fill it with answer from server
 	*/
-	void get_Response(std::string);
+	void get_Response(std::string&);
 
 	// cleaning :D
 	~WinSockSimplified();
