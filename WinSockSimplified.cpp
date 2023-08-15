@@ -114,7 +114,7 @@ void WinSockSimplified::default_Request_set(const char* IPv4_IPv6_webaddress) {
 	delete[] request;
 }
 
-void WinSockSimplified::get_Response(std::string response) {
+void WinSockSimplified::get_Response(std::string& response) {
 	char buffer[4096];
 
 	while (true) {
