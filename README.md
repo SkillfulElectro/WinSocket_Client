@@ -10,3 +10,7 @@ Here's a simplified version to enhance comprehension. Read the comments to under
 
 
 Enjoy network programming, currently focusing on enhancing client and server-side WinSocket programming.
+
+
+Made with love ♥ 
+https://learn.microsoft.com/en-us/windows/win32/winsock/getting-started-with-winsock
