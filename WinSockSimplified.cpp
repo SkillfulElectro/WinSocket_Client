@@ -57,6 +57,10 @@ WinSockSimplified::WinSockSimplified(ipMethod ip_family, const char* IPv4_IPv6_w
 	}
 }
 
+/*
+	if you want to set the request manually you can use this syntax : 
+	//	"GET / HTTP/1.1\r\nHost: www.example.com\r\nConnection: close\r\n\r\n" 
+*/
 void WinSockSimplified::SetRequest_optional(const char* request) {
 	if (send(clientSocket, request, strlen(request), 0) == SOCKET_ERROR) {
 		std::cerr << "Error sending request." << std::endl;
@@ -67,6 +71,10 @@ void WinSockSimplified::SetRequest_optional(const char* request) {
 	}
 }
 
+/*
+	in default version of setting request , you just need to verify the IP of server
+	// if server is website , address of website is enough
+*/
 void WinSockSimplified::default_Request_set(const char* IPv4_IPv6_webaddress) {
 	const char* request_method{ "GET / HTTP/1.1\r\nHost: " };
 	const char* request_connectionType{ "\r\nConnection: close\r\n\r\n" };
